@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="courses-top-container">
+        <div id="logo-container">
+            <img id="logo" src="./assets/logo.png">
+            <label>Studies</label>
+        </div>
+        <div id="home-container">
+            <a id="home-link" href="index.html">Kezdőlap</a>
+        </div>
+    </div>
+    <div id="content-container">
+        <div id="card-container">
+            <div id="question-container">
+                <h2 id="question"></h2>
+            </div>
+            <div id="answer-container">
+                <input id="answer" type="text">
+                <p id="wrong"></p>
+            </div>
+            <div id="btn-container"><button id="send-btn" onclick="SendClicked()">Küldés</button></div>
+            <div id="btn-container"><button id="next-btn" onclick="NextClicked()">Tovább</button></div>
+            <div id="btn-container"><a id="home-btn" href="index.html">Rendben</a></div>
+        </div>
+    </div>
+    
+    <script src="JavaScript.js"></script>
+</body>
+</html>

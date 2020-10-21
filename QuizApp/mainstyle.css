@@ -1,0 +1,519 @@
+@charset "UTF-8";
+/*Layout*/
+/*Colors*/
+/*Fonts*/
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #131327;
+  scroll-behavior: smooth;
+}
+
+#logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 60%;
+  color: white;
+  font-size: 30px;
+  padding: 2px;
+  font-family: "Yesteryear", cursive;
+}
+
+#top-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#title {
+  padding-left: 80px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  background-color: white;
+}
+
+#hamburger-btn {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  border-bottom: 5px solid #F84167;
+  border-radius: 5px;
+  padding-bottom: 3px;
+  width: 200px;
+}
+
+#courses-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#about-us-container, #for-companies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  background-color: white;
+}
+
+#courses {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#text-container, #pic-container {
+  width: 600px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#html, #css, #javascript {
+  width: 200px;
+}
+
+#btn-html, #btn-css, #btn-js {
+  color: white;
+  font-size: 24px;
+  background-color: #131327;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#btn-html:hover, #btn-css:hover, #btn-js:hover {
+  background-color: #6C63FF;
+}
+
+#footer-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#pic {
+  width: 500px;
+  height: 500px;
+  -webkit-animation: changePic 16s linear infinite;
+          animation: changePic 16s linear infinite;
+}
+
+#loading {
+  height: 3px;
+  background-color: #F84167;
+  width: 100%;
+}
+
+#a-courses {
+  background-color: #F84167;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#hamburger-btn {
+  background: none;
+  color: white;
+  background-image: url("./assets/menu.png");
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+}
+
+#a-courses:hover {
+  background-color: #DD3B5D;
+}
+
+#ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 10px;
+}
+
+#level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#btn-interests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#content-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*Kurzusokhoz tartozó style-ok*/
+#card-container {
+  width: 60%;
+}
+
+#question-container, #answer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+
+#question {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+#answer {
+  width: 100%;
+  height: 30px;
+}
+
+#wrong {
+  font-family: "Roboto", sans-serif;
+  color: #F84167;
+}
+
+#navbar-container-mobile {
+  display: none;
+}
+
+#btn-container {
+  padding: 10px;
+}
+
+#send-btn, #next-btn, #home-btn {
+  background-color: #F84167;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+#send-btn, #home-btn, #next-btn:hover {
+  background-color: #DD3B5D;
+}
+
+#home-btn {
+  visibility: hidden;
+}
+
+#home-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10px;
+}
+
+#home-link {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #F84167;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#home-link:hover {
+  background-color: #DD3B5D;
+}
+
+#courses-top-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes changePic {
+  0% {
+    content: url("./assets/pic1.svg");
+  }
+  25% {
+    content: url("./assets/pic2.svg");
+  }
+  50% {
+    content: url("./assets/pic3.svg");
+  }
+  75% {
+    content: url("./assets/pic4.svg");
+  }
+  100% {
+    content: url("./assets/pic3.svg");
+  }
+}
+
+@keyframes changePic {
+  0% {
+    content: url("./assets/pic1.svg");
+  }
+  25% {
+    content: url("./assets/pic2.svg");
+  }
+  50% {
+    content: url("./assets/pic3.svg");
+  }
+  75% {
+    content: url("./assets/pic4.svg");
+  }
+  100% {
+    content: url("./assets/pic3.svg");
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #pic-container {
+    display: none;
+    width: 300px;
+  }
+  #top-container {
+    display: block;
+  }
+  #navbar-container {
+    visibility: hidden;
+  }
+  #navbar-container-mobile {
+    width: 100px;
+  }
+  #links, #a-courses {
+    display: block;
+    padding: 10px;
+  }
+  #hamburger-btn {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 2px;
+  }
+  #text-container {
+    width: 50vw;
+  }
+  #pic {
+    width: 250px;
+    height: 250px;
+  }
+  #title, #text-container {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=mainstyle.css.map */
